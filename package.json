@@ -1,0 +1,39 @@
+{
+  "name": "api-node-ts",
+  "version": "1.0.0",
+  "description": "Node API server using TypeScript",
+  "main": "server.ts",
+  "author": "Juthatip",
+  "license": "ISC",
+  "_moduleAliases": {
+    "@controllers": "./server/controllers",
+    "@routes": "./server/routes",
+    "@data": "./data"
+  },
+  "scripts": {
+    "start": "nodemon",
+    "build": "tsc",
+    "serve": "node ./dist/server.js",
+    "watch": "tsc -w",
+    "test": "jest",
+    "test:watch": "jest --watch"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^4.17.21",
+    "@types/jest": "^29.5.12",
+    "@types/node": "^20.12.9",
+    "jest": "^29.7.0",
+    "jest-mock-axios": "^4.7.3",
+    "nodemon": "^3.1.0",
+    "ts-jest": "^29.1.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.5"
+  },
+  "dependencies": {
+    "axios": "^1.6.8",
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "module-alias": "^2.2.3"
+  }
+}
